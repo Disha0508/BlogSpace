@@ -1,16 +1,36 @@
-# React + Vite
+# BlogSpace — Интерактивная блог-платформа на React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**BlogSpace** — это современное одностраничное веб-приложение (SPA), представляющее собой интерактивную блог-платформу. Проект разработан на базе библиотеки **React** с применением компонентного подхода и декларативного управления состоянием.
 
-Currently, two official plugins are available:
+Основная цель проекта — демонстрация практического применения принципов компонентного подхода, работы с JSX, управления состоянием приложения и создания динамического пользовательского интерфейса с высокой производительностью за счет Virtual DOM.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌟 Ключевые возможности проекта
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Динамический поиск в реальном времени:** Полнотекстовый поиск по содержанию постов, который мгновенно фильтрует результаты по мере ввода.
+* **Фильтрация по тегам:** Удобная навигация и сортировка контента с помощью интерактивного списка тегов.
+* **Интерактивные компоненты:** Динамический рендеринг элементов интерфейса и быстрая обработка пользовательских событий.
+* **Модульная архитектура:** Четкое разделение ответственности между компонентами, что обеспечивает масштабируемость и простоту поддержки кода.
+* **Интерфейс комментариев:** Встроенный компонент-заглушка для будущего функционала просмотра и написания комментариев.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗 Архитектура и компоненты
+
+Проект построен на базе модульных переиспользуемых компонентов React:
+
+* `PostList` — контейнерный компонент для отображения и фильтрации списка постов.
+* `PostCard` — компонент карточки отдельного поста, отвечающий за отображение превью публикации.
+* `AuthorInfo` — блок с детальной информацией об авторе публикации.
+* `TagList` — интерактивный список тегов для быстрой фильтрации контента.
+* `CommentPreview` — заготовка (заглушка) для функционала просмотра и публикации комментариев.
+
+---
+
+## 🛠 Технологический стек
+
+* **Frontend:** React (JSX, Hooks, Virtual DOM)
+* **Инструменты сборки:** Vite
+* **Языки:** JavaScript (ES6+), HTML5, CSS3
+* **Управление состоянием:** хук `useState`, передача данных через `props`
